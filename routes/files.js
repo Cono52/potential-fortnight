@@ -11,4 +11,11 @@ router.get('/', function(req, res, next) {
   });
 });
 
+router.post('/', function(req, res, next) {
+  File.create(req.body, function (err, file) {
+    if (err) return next(err);
+    res.json(file);
+  });
+});
+
 module.exports = router;
