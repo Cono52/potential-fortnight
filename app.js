@@ -10,7 +10,7 @@ const app = express();
 
 const index = require('./routes/index');
 const files = require('./routes/files');
-const users = require('./routes/files');
+const users = require('./routes/users');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
